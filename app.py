@@ -4,7 +4,7 @@ def main():
     processes = []
     try:
         streamlit_process = subprocess.Popen(["streamlit", "run", "services/StreamlitService.py", "--server.headless", "true"])
-        fastapi_process = subprocess.Popen(["python", "services/FastAPIService.py"])
+        fastapi_process = subprocess.Popen(["uvicorn", "services.FastAPIService:app", "--port", "8000"])
         processes.extend([streamlit_process, fastapi_process])
         
         for process in processes:

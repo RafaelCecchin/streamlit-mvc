@@ -1,11 +1,11 @@
 import streamlit as st
-from routes import home_controller, oportunidade_controller
+from routes import VisaoGeralController, OportunidadeController
 
 def web_routes():
-    page = st.sidebar.radio("Go to", ["Home", "Dashboard"])
+    page = st.sidebar.radio("Go to", ["Visão Geral", "Oportunidades"])
 
-    if page == "Home":
-        home_controller()
+    if page == "Visão Geral":
+        VisaoGeralController().index()
 
-    if page == "Dashboard":
-        oportunidade_controller()
+    if page == "Oportunidades":
+        OportunidadeController().index()

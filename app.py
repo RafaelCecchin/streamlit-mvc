@@ -1,11 +1,10 @@
 import subprocess
-import signal
 
 def main():
     processes = []
     try:
-        streamlit_process = subprocess.Popen(["streamlit", "run", "services/streamlit_service.py", "--server.headless", "true"])
-        fastapi_process = subprocess.Popen(["python", "services/fastapi_service.py"])
+        streamlit_process = subprocess.Popen(["streamlit", "run", "services/StreamlitService.py", "--server.headless", "true"])
+        fastapi_process = subprocess.Popen(["python", "services/FastapiService.py"])
         processes.extend([streamlit_process, fastapi_process])
         
         for process in processes:

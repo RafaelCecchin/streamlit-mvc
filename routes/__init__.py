@@ -1,3 +1,2 @@
-from controllers.home_controller import home_controller
-from controllers.oportunidades_controller import oportunidade_controller
-
+from controllers.VisaoGeralController import VisaoGeralController
+from controllers.OportunidadeController import OportunidadeController

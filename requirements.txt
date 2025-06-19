@@ -1,5 +1,5 @@
 fastapi==0.115.13
 pandas==2.3.0
 streamlit==1.46.0
-watchmedo
+watchdog
 uvicorn

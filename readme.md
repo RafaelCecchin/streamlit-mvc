@@ -1,3 +1,5 @@
+# Streamlit MVC
+```
 streamlit_mvc/
 │── app.py               # Main entry point (controller)
 │── models/
@@ -15,3 +17,10 @@ streamlit_mvc/
 │   ├── images/          # Store images
 │── requirements.txt     # Dependencies
 │── README.md            # Documentation
+```
+
+## How to execute
+
+```bash
+watchmedo auto-restart --debug-force-polling --pattern="*" --recursive -- python app.py
+```

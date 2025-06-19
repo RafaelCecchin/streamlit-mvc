@@ -1,0 +1,3 @@
+from controllers.home_controller import home_controller
+from controllers.oportunidades_controller import oportunidade_controller
+

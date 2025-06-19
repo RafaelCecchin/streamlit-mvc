@@ -1,2 +1,2 @@
-from controllers.VisaoGeralController import VisaoGeralController
-from controllers.OportunidadeController import OportunidadeController
+from routes.web import web_routes
+from routes.api import api_routes

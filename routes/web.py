@@ -1,5 +1,5 @@
 import streamlit as st
-from routes import VisaoGeralController, OportunidadeController
+from controllers import VisaoGeralController, OportunidadeController
 
 def web_routes():
     page = st.sidebar.radio("Go to", ["Visão Geral", "Oportunidades"])
